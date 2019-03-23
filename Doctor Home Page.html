@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doctor Doodle</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="../Project/css/others.css" media="all">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- link for Side nave icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="sidenav-text">D</div>
+        <div class="sidenav-button">
+            <div class="sidenav-navigation nav-home"><img src="img/Home.png" height="55" width="55" /></div>
+            <div class="sidenav-navigation nav-alert"><img src="img/Alert.png" height="55" width="55" /></div>
+            <div class="sidenav-navigation nav-history" onclick="myFunction()"><img src="img/History.png" height="55" width="55" /></div>
+        </div>
+        <div class="sidenav-footer">
+            <div class="circle-position">
+                <div class="circle">
+                    <div class="centered">RD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <div class="header">
+            <div class="hdr-container p-t-5">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="p-r-7">
+                            <div class="hdr-image p-l-15">
+                                <div class="circle">
+                                    <div class="centered">RD</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="hdr-texts-main">
+                                Good Evening, Dr Robert Downing!
+                            </div>
+                        </td>
+						<td rowspan="2" class="hdr-logo-position hdr-profile">
+							<img class="profile" src="img/Profile.png" height="57" width="70" />
+						</td>
+						<td rowspan="2" class="hdr-signout">
+							<img class="signout" src="img/Sign Out.png" height="57" width="70" />
+						</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="hdr-texts-sub">
+                                MBBS, MSc(Opthalmologist)
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>​
+        </div>
+        <div class="card-body-main">
+            <table class="card-body-outer">
+                <tr>
+                    <td class="card-header" colspan="3">
+                        <table>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="card-header-text">Medical Prescription</div>
+                                </td>
+                                <td class="btn-align1">
+                                    <button class="btn btn--radius btn--red" type="submit">Generate PDF</button>
+                                </td>
+                                <td class="btn-align2">
+                                    <button class="btn btn--radius btn--red" type="submit">View Prescription</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="card-body-z">
+                        <div class="card-background">
+                            <div class="card_main">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/details.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Patient Details</h1>
+                                        <p class="description"><i>Bringing Loving Care to Health Care.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="card-body-x">
+                        <div class="card-background">
+                            <div class="card_main">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/diagnosis.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Symptoms</h1>
+                                        <p class="description"><i>Care you can believe in.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="card-body-y">
+                        <div class="card-background">
+                            <div class="card_main">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/medication.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Prescription</h1>
+                                        <p class="description"><i>Changing Medicine. Changing Lives.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+<script>
+        $(function() {
+            $('#demo').on('click', function(e) {
+                new Custombox.modal({
+                    content: {
+                        effect: 'swell',
+                        close: true,
+                        width: '700px',
+                        target: '#modal'
+                    },
+                    overlay: {
+                        color: '#000',
+                        close: false,
+                        opacity: .48,
+                    },
+                    loader: {
+                        active: true,
+                        color: 'red',
+                        speed: 1000,
+                    }
+                }).open();
+                e.preventDefault();
+            });
+        });
+    </script>	
+</body>
+
+</html>

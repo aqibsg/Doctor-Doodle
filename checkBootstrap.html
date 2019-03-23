@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doctor Doodle</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="../Project/css/others.css" media="all">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- link for Side nave icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div class= "container col-12">
+    <div class="sidenav">
+        <div class="sidenav-text">D</div>
+        <div class="sidenav-button">
+            <div class="sidenav-navigation nav-home"><img src="img/Home.png" height="55" width="55" /></div>
+            <div class="sidenav-navigation nav-alert"><img src="img/Alert.png" height="55" width="55" /></div>
+            <div class="sidenav-navigation nav-history" onclick="myFunction()"><img src="img/History.png" height="55" width="55" /></div>
+        </div>
+        <div class="sidenav-footer">
+            <div class="circle-position">
+                <div class="circle">
+                    <div class="centered">RD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <div class="header">
+            <div class="hdr-container p-t-5">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="p-r-7">
+                            <div class="hdr-image p-l-15">
+                                <div class="circle">
+                                    <div class="centered">RD</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="hdr-texts-main">
+                                Good Evening, Dr Robert Downing!
+                            </div>
+                        </td>
+                        <td rowspan="2" class="hdr-logo-position hdr-profile">
+                            <img class="profile" src="img/Profile.png" height="57" width="70" />
+                        </td>
+                        <td rowspan="2" class="hdr-signout">
+                            <img class="signout" src="img/Sign Out.png" height="57" width="70" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="hdr-texts-sub">
+                                MBBS, MSc(Opthalmologist)
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>​
+        </div>
+        <div class="card-body-main">
+            <table class="card-body-outer">
+                <tr>
+                    <td class="card-header" colspan="3">
+                        <table>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="card-header-text">Medical Prescription</div>
+                                </td>
+                                <td class="btn-align1">
+                                    <button class="btn btn--radius btn--red" type="submit">Generate PDF</button>
+                                </td>
+                                <td class="btn-align2">
+                                    <button class="btn btn--radius btn--red" type="submit">View Prescription</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="card-body-z">
+                        <div class="card-background">
+                            <div class="card_main" id="patient_details">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/details.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Patient Details</h1>
+                                        <p class="description"><i>Bringing Loving Care to Health Care.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="card-body-x">
+                        <div class="card-background">
+                            <div class="card_main" id="symptoms">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/diagnosis.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Symptoms</h1>
+                                        <p class="description"><i>Care you can believe in.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="card-body-y">
+                        <div class="card-background">
+                            <div class="card_main" href="#modal" id="demo3">
+                                <div class="products">
+                                    <div class="product active">
+                                        <div class="thumbnail"><img src="img/medication.png" height="180" width="200" /></div>
+                                        <h1 class="card-title">Prescription</h1>
+                                        <p class="description"><i>Changing Medicine. Changing Lives.</i> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div id="patient-details-modal" class="patient-details-modal">
+        <div class="p-r-5 p-t-2">
+            <button type="button" class="close" onclick="Custombox.modal.close();"><img src="img/Close.png" height="20" width="20" /></button>
+        </div>
+        <h4 class="form-heading"> Patient Basic Details</h4>
+
+        <div class="p-20">
+            <form method="POST">
+                <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">First name<span class="mandatory"> *</span></label>
+                            <input class="input--style-4" type="text" id="first_name" placeholder="E.g. Dr Robert" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Last name<span class="mandatory"> *</span></label>
+                            <input class="input--style-4" type="text" id="last_name" placeholder="E.g. Downing" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Age<span class="mandatory"> *</span></label>
+                            <input class="input--style-4" type="text" id="age" placeholder="E.g. 45 years" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Gender<span class="mandatory"> *</span></label>
+                            <div class="p-t-10">
+                                <label class="radio-container m-r-45 form-text">Male
+                                    <input type="radio" checked="checked" name="gender" id="gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Female
+                                    <input type="radio" name="gender" id="gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Weight<span class="mandatory"> *</span></label>
+                            <input class="input--style-4" type="text" id="weight" placeholder="E.g. 75 Kg" required>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Height<span class="mandatory"> *</span></label>
+                            <input class="input--style-4" type="text" id="height" placeholder="E.g. 180 cm" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Pulse Rate</label>
+                            <input class="input--style-4" type="email" id="pulse_rate" placeholder="E.g. 100bpm">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">Blood Pressure</label>
+                            <input class="input--style-4" type="text" id="blood_pressure" placeholder="E.g. 140/90mmHg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="form-text">BMI</label>
+                            <input class="input--style-4" type="text" id="bmi" placeholder="E.g. 100bpm">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="p-l-5">
+                                <button class="btn btn--radius btn--blue" type="reset">Reset</button>
+                            </td>
+                            <td class="p-l-5">
+                                <button class="btn btn--radius btn--blue" type="submit">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div id="symptoms-modal" class="symptoms-modal">
+        <div class="p-r-5 p-t-2">
+            <button type="button" class="close" onclick="Custombox.modal.close();"><img src="img/Close.png" height="20" width="20" /></button>
+        </div>
+        <h4 class="form-heading">Symptoms</h4>
+        <div class="p-20">
+            <form method="POST">
+                <div>
+                    <div class="col-1">
+                        <div class="input-group">
+                            <label class="form-text">Main Symptoms of the Patient<span class="mandatory"> *</span></label>
+                            <textarea rows="7" class="input--style-1" id="patient-symptoms" placeholder="Type the patient's symptoms here" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <table>
+                        <tr>
+                            <td class="p-l-5">
+                                <button class="btn btn--radius btn--blue" type="reset">Reset</button>
+                            </td>
+                            <td class="p-l-5">
+                                <button class="btn btn--radius btn--blue" type="submit">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div id="modal2" style="display: none;  background: white;  border-radius: 15px">
+        <div style="border: 1px solid ;border-radius: 15px ">
+            <button type="button" class="close" onclick="Custombox.modal.close();">&times;</button>
+            <h4> yyyy </h4>
+        </div>
+        <div style="padding: 20px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+    </div>
+    </div>
+	</div>
+    <script>
+        $(function() {
+            $('#patient_details').on('click', function(e) {
+                new Custombox.modal({
+                    content: {
+                        effect: 'swell',
+                        close: true,
+                        width: '700px',
+                        target: '#patient-details-modal'
+                    },
+                    overlay: {
+                        color: '#797777',
+                        close: false,
+                        opacity: .60,
+                    },
+                    loader: {
+                        active: true,
+                        color: '#0F7A86',
+                        speed: 1000,
+                    }
+                }).open();
+                e.preventDefault();
+            });
+        });
+        $(function() {
+            $('#symptoms').on('click', function(e) {
+                new Custombox.modal({
+                    content: {
+                        effect: 'swell',
+                        close: true,
+                        width: '700px',
+                        target: '#symptoms-modal'
+                    },
+                    overlay: {
+                        color: '#797777',
+                        close: false,
+                        opacity: .60,
+                    },
+                    loader: {
+                        active: true,
+                        color: '#0F7A86',
+                        speed: 1000,
+                    }
+                }).open();
+                e.preventDefault();
+            });
+        });
+        $(function() {
+            $('#demo3').on('click', function(e) {
+                new Custombox.modal({
+                    content: {
+                        effect: 'swell',
+                        close: true,
+                        width: '700px',
+                        target: '#modal2'
+                    },
+                    overlay: {
+                        color: '#797777',
+                        close: false,
+                        opacity: .60,
+                    },
+                    loader: {
+                        active: true,
+                        color: '#0F7A86',
+                        speed: 1000,
+                    }
+                }).open();
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+</body>
+
+</html>

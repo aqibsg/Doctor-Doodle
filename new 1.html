@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doctor Doodle</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="../Project/css/others.css" media="all">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/custombox/4.0.3/custombox.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- link for Side nave icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="modal" style="display: none;  background: white;  border-radius: 15px">
+        <div style="border: 1px solid ;border-radius: 15px ">
+            <button type="button" class="close" onclick="Custombox.modal.close();">&times;</button>
+            <!-- 
+            <button type="button" class="btn btn-outline btn-info demo-close-btn" onclick="Custombox.modal.close();">Close</button> -->
+            <h4> Title </h4>
+        </div>
+        <div style="padding: 20px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+    </div>
+
+    <div href="#modal" id="demo"><img class="profile" src="img/Profile.png" height="57" width="70" /></div>
+    <script>
+        $(function() {
+            $('#demo').on('click', function(e) {
+                new Custombox.modal({
+                    content: {
+                        effect: 'swell',
+                        close: true,
+                        width: '700px',
+                        target: '#modal'
+                    },
+                    overlay: {
+                        color: '#000',
+                        close: false,
+                        opacity: .48,
+                    },
+                    loader: {
+                        active: true,
+                        color: 'red',
+                        speed: 1000,
+                    }
+                }).open();
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
